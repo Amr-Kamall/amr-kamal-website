@@ -1,0 +1,61 @@
+.hero {
+  margin-top: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  flex-grow: 1;
+}
+
+.hero .left-section .img-profile {
+  display: flex;
+  align-items: end;
+  gap: 0.6rem;
+}
+
+.icon-verified {
+  margin-bottom: 0.3rem;
+}
+
+.hero .left-section .img-profile .avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 1px;
+  box-shadow: 2px 2px 40px rgba(227, 222, 222, 0.425) inset;
+}
+
+.hero h1.title {
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 1.8rem 0;
+  color: var(--title);
+}
+
+.hero p.sub-title {
+  color: var(--sub-title);
+  line-height: 1.7rem;
+  font-size: 0.9rem;
+  margin-bottom: 2.8rem;
+}
+
+.hero .all-icons {
+  justify-content: start;
+  gap: 1rem;
+}
+
+.hero .all-icons div {
+  color: var(--sub-title);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.hero .all-icons div:hover {
+  transform: scale(1.1);
+  color: var(--icon-hover);
+}
