@@ -45,6 +45,7 @@ header ul li a:hover {
   inset: 0;
   background-color: rgba(40, 40, 48, 0.91);
   z-index: 10;
+  backdrop-filter: blur(0.4rem);
 }
 
 .fixed ul.modal {

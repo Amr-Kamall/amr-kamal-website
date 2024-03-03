@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.9rem;
+}
+
+.footer .footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .footer-links a {
+  display: block;
+  color: var(--sub-title);
+  font-size: 0.9rem;
+  transform: scale(1);
+}
+
+.footer .footer-links a:hover {
+  color: var(--blue);
+  transform: scale(1.1);
+}
+
+.footer .footer-para {
+  color: rgb(113 113 122);
+}
+
+@media (max-width: 910px) {
+  .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

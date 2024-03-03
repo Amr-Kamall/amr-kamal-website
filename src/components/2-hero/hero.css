@@ -16,11 +16,12 @@
 
 .icon-verified {
   margin-bottom: 0.3rem;
+  color: var(--blue);
 }
 
 .hero .left-section .img-profile .avatar {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid gray;

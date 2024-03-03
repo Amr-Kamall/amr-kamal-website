@@ -21,8 +21,20 @@ function Hero() {
         <div className="all-icons flex">
           <div className="icon-twitter"></div>
           <div className="icon-instagram"></div>
-          <div className="icon-github"></div>
-          <div className="icon-linkedin"></div>
+          <a
+            href="https://github.com/Amr-Kamall"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="icon-github"></div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/developer-amr-kamal/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="icon-linkedin"></div>
+          </a>
         </div>
       </div>
       <div className="right-section">animation</div>
