@@ -1,26 +1,31 @@
 import React from "react";
 import "./hero.css";
+import Lottie from "lottie-react";
+import developerAnimation from "../../../public/animations/developer.json";
 
 function Hero() {
   return (
-    <section className="hero flex">
+    <section className="hero flex" id="About">
       <div className="left-section">
         <div className="img-profile">
-          <img src="/hero-profile.jpg" alt="profile" className="avatar" />
+          <img
+            src="/images/hero-profile.jpg"
+            alt="profile"
+            className="avatar"
+          />
           <div className="icon-verified"></div>
         </div>
         <h1 className="title">
-          Software designer, founder, and amateur astronaut.
+          FrontEnd Developer <br /> create websites and web applications
         </h1>
         <p className="sub-title">
-          I'm Spencer, a software designer and entrepreneur based in New York
-          City. I'm the founder and CEO of Planetaria, where we develop
-          technologies that empower regular people to explore space on their own
-          terms.
+          I am a web developer with React , passionate about coding and creating
+          clean, efficient code . I am focus on providing websites that meet
+          customers needs and improve designs for usability and functionality ,
+          As a CS student, I'm constantly learning and exploring new
+          technologies to improve my skills
         </p>
         <div className="all-icons flex">
-          <div className="icon-twitter"></div>
-          <div className="icon-instagram"></div>
           <a
             href="https://github.com/Amr-Kamall"
             target="_blank"
@@ -35,9 +40,17 @@ function Hero() {
           >
             <div className="icon-linkedin"></div>
           </a>
+          <div className="icon-twitter"></div>
+          <div className="icon-instagram"></div>
         </div>
       </div>
-      <div className="right-section">animation</div>
+      <div className="right-section">
+        <Lottie
+          animationData={developerAnimation}
+          className="developer-animation"
+          loop={true}
+        />
+      </div>
     </section>
   );
 }

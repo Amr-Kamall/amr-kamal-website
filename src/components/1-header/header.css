@@ -24,7 +24,7 @@ header.flex {
 
 header.flex nav {
   border-radius: 55px;
-  background-color: var(--bgHeader);
+  background-color: var(--bg-header);
   padding: 0.77rem 1.6rem;
   box-shadow: 1px 1px 40px #2323242a;
 }
@@ -117,6 +117,7 @@ header button.mode {
   border: 1px solid rgba(244, 165, 96, 0.249);
   color: var(--sub-title);
   transition: all 0.3s;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
 }
 
 header button.icon-menu {
@@ -131,6 +132,10 @@ header button.icon-menu {
   color: var(--sub-title);
   transition: all 0.3s;
   display: none;
+}
+
+header .icon-sun {
+  color: orange;
 }
 
 header button.icon-menu:hover,

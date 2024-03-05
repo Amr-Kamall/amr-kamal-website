@@ -1,56 +1,77 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 
-function Header() {
-  const [show, setShow] = useState(false);
-  return (
-    <header className="flex">
-      <button onClick={() => setShow((show) => !show)} className="icon-menu" />
+const mobileLinks = ["Home", "About", "Projects", "Contact"];
 
+function Header() {
+  const [showModal, setShowModal] = useState(false);
+  const [theme, setTheme] = useState(function () {
+    const storedValue = localStorage.getItem("Mode");
+    return storedValue || "dark";
+  });
+
+  useEffect(
+    function () {
+      if (theme === "light") {
+        document.body.classList.remove("dark");
+        document.body.classList.add("light");
+      } else if (theme === "dark") {
+        document.body.classList.remove("light");
+        document.body.classList.add("dark");
+      }
+    },
+    [theme]
+  );
+  return (
+    <header className="flex" id="Home">
+      <button
+        onClick={() => setShowModal((showModal) => !showModal)}
+        className="icon-menu"
+      />
       <div />
       <nav>
         <ul className="flex">
           <li>
-            <a href="">About</a>
+            <a href="#Home">Home</a>
           </li>
           <li>
-            <a href="">Articles</a>
+            <a href="#About">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#Projects">Projects</a>
           </li>
           <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#Contact">Contact</a>
           </li>
         </ul>
       </nav>
-      <button className="mode">
-        <span className="icon-moon-o"></span>
+      <button
+        onClick={() => {
+          localStorage.setItem("Mode", theme === "dark" ? "light" : "dark");
+          setTheme(localStorage.getItem("Mode"));
+        }}
+        className="mode"
+      >
+        {theme === "dark" ? (
+          <span className="icon-moon-o"></span>
+        ) : (
+          <span className="icon-sun"></span>
+        )}
       </button>
-      {show && (
+      {showModal && (
         <div className="fixed border">
           <ul className="modal">
             <li>
-              <button className="icon-close" onClick={() => setShow(false)} />
+              <button
+                className="icon-close"
+                onClick={() => setShowModal(false)}
+              />
             </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#articles">Articles </a>
-            </li>
-            <li>
-              <a href="#Projects">Projects</a>
-            </li>
-            <li>
-              <a href="#Speaking">Speaking</a>
-            </li>
-            <li>
-              <a href="#Uses">Uses</a>
-            </li>
+            {mobileLinks.map((link) => (
+              <li key={link} onClick={() => setShowModal(false)}>
+                <a href={`#${link}`}>{link}</a>
+              </li>
+            ))}
           </ul>
         </div>
       )}

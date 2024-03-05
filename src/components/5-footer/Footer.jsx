@@ -5,16 +5,13 @@ function Footer() {
     <footer className="footer">
       <ul className="footer-links">
         <li>
+          <a href="#Home">Home</a>
+        </li>
+        <li>
           <a href="#About">About</a>
         </li>
         <li>
-          <a href="#Articles">Articles</a>
-        </li>
-        <li>
           <a href="#Projects">Projects</a>
-        </li>
-        <li>
-          <a href="#Speaking">Speaking</a>
         </li>
         <li>
           <a href="#Contact">Contact</a>
