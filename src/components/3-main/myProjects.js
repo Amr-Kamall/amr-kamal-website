@@ -1,19 +1,5 @@
 export const myProjects = [
   {
-    projectTitle: "World Wise",
-    category: "react",
-    imgPath: "/images/WorldWise.png",
-    liveDemo: "https://world-wise-ruby.vercel.app",
-    githubRepo: "https://github.com/Amr-Kamall/World-Wise",
-  },
-  {
-    projectTitle: "movies",
-    category: "react",
-    imgPath: "/images/movie.png",
-    liveDemo: "https://use-popcorn-seven-ecru.vercel.app/",
-    githubRepo: "https://github.com/Amr-Kamall/usePopcorn",
-  },
-  {
     projectTitle: "Fast Pizza",
     category: "react",
     imgPath: "/images/pizza.png",
@@ -28,12 +14,34 @@ export const myProjects = [
     githubRepo: "https://github.com/Amr-Kamall/Natours",
   },
   {
+    projectTitle: "watches",
+    category: "javascript",
+    imgPath: "/images/Watches.png",
+    liveDemo: "https://watches-shopping.vercel.app/",
+    githubRepo: "https://github.com/Amr-Kamall/watches-shopping",
+  },
+  {
     projectTitle: "coffee shop",
     category: "html&css",
     imgPath: "/images/Coffee.png",
     liveDemo: "https://coffee-ashen-iota.vercel.app/",
     githubRepo: "https://github.com/Amr-Kamall/coffee-shop",
   },
+  {
+    projectTitle: "World Wise",
+    category: "react",
+    imgPath: "/images/WorldWise.png",
+    liveDemo: "https://world-wise-ruby.vercel.app",
+    githubRepo: "https://github.com/Amr-Kamall/World-Wise",
+  },
+  {
+    projectTitle: "movies",
+    category: "react",
+    imgPath: "/images/movie.png",
+    liveDemo: "https://use-popcorn-seven-ecru.vercel.app/",
+    githubRepo: "https://github.com/Amr-Kamall/usePopcorn",
+  },
+
   {
     projectTitle: "Crud",
     category: "javascript",
@@ -48,13 +56,7 @@ export const myProjects = [
     liveDemo: "https://nike-store-henna.vercel.app/",
     githubRepo: "https://github.com/Amr-Kamall/Nike-Store",
   },
-  {
-    projectTitle: "watches",
-    category: "javascript",
-    imgPath: "/images/Watches.png",
-    liveDemo: "https://watches-shopping.vercel.app/",
-    githubRepo: "https://github.com/Amr-Kamall/watches-shopping",
-  },
+
   {
     projectTitle: "Covid-19",
     category: "bootstrab",
