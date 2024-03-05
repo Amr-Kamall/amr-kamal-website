@@ -36,7 +36,7 @@ body {
   background-color: var(--primary);
   color: #fff;
   animation: bodyAnimation 3s;
-  animation-delay: 1.9s;
+  animation-delay: 2.1s;
 }
 .container {
   border: 2px solid var(--border);
