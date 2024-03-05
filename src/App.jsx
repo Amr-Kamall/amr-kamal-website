@@ -25,26 +25,29 @@ function App() {
       }
       setTimeout(function () {
         setLoading(false);
-      }, 2200);
+      }, 2000);
     },
     [loading]
   );
   return (
     <div className="container">
-      {loading && (
+      {loading ? (
         <div className="loader-wrapper">
           <div className="loader"></div>
           <span className="amr-loader"> Code With Amr</span>
         </div>
+      ) : (
+        <>
+          <Header />
+          <Hero />
+          <div className="divider" />
+          <Main />
+          <div className="divider" />
+          <Contact />
+          <div className="divider" />
+          <Footer />{" "}
+        </>
       )}
-      <Header />
-      <Hero />
-      <div className="divider" />
-      <Main />
-      <div className="divider" />
-      <Contact />
-      <div className="divider" />
-      <Footer />
     </div>
   );
 }
