@@ -10,7 +10,7 @@ import { Crisp } from "crisp-sdk-web";
 function App() {
   const [loading, setLoading] = useState(true);
   const configureCrisp = useMemo(() => {
-    return () => Crisp.configure("42db37e0-15c9-48d0-97e7-22af755dcf02");
+    return () => Crisp.configure("82562783-af57-47dd-8b20-30f7dc6ffe01");
   }, []);
   useEffect(() => {
     configureCrisp();
