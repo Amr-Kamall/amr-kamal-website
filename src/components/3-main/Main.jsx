@@ -55,7 +55,7 @@ function Main() {
       <div className="right-section">
         {filteredProjects.map((project) => (
           <article className="card" key={project.projectTitle}>
-            <img src={project.imgPath} alt="final" />
+            <img src={project.imgPath} alt={project.projectTitle} />
             <div className="card-content">
               <h1 className="title">{project.projectTitle}</h1>
               <p className="sub-title">
