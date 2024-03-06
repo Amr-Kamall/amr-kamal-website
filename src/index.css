@@ -36,6 +36,9 @@ body {
   background-color: var(--primary);
   color: #fff;
 }
+body.loading {
+  animation: bodyAnimation 2s;
+}
 
 body::-webkit-scrollbar {
   display: none; /* WebKit browsers */

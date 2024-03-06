@@ -16,20 +16,16 @@ function App() {
     configureCrisp();
   }, [configureCrisp]);
   /////////////
-  useEffect(
-    function () {
-      if (loading === true) {
-        document.body.classList.add("no-scroll");
-      } else {
-        document.body.classList.add("loading-animation");
-        document.body.classList.remove("no-scroll");
-      }
-      setTimeout(function () {
-        setLoading(false);
-      }, 1300);
-    },
-    [loading]
-  );
+  useEffect(() => {
+    if (loading) {
+      document.body.classList.add("no-scroll");
+      const timeout = setTimeout(() => setLoading(false), 1800);
+      return () => clearTimeout(timeout);
+    } else {
+      document.body.classList.add("loading");
+      document.body.classList.remove("no-scroll");
+    }
+  }, [loading]);
   return (
     <div className="container">
       {loading ? (
