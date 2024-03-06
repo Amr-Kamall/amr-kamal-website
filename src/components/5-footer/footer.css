@@ -24,7 +24,8 @@
 }
 
 .footer .footer-para {
-  color: rgb(113 113 122);
+  /* color: rgb(113 113 122); */
+  color: #333;
 }
 
 @media (max-width: 910px) {
