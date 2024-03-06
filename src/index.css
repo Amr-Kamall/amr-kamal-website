@@ -38,6 +38,9 @@ body {
   animation: bodyAnimation 3s;
   animation-delay: 1.9s;
 }
+body::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
 .container {
   border: 2px solid var(--border);
   width: 80%;
