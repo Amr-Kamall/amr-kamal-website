@@ -21,11 +21,12 @@ function App() {
       if (loading === true) {
         document.body.classList.add("no-scroll");
       } else {
+        document.body.classList.add("loading-animation");
         document.body.classList.remove("no-scroll");
       }
       setTimeout(function () {
         setLoading(false);
-      }, 2000);
+      }, 1800);
     },
     [loading]
   );

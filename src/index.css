@@ -35,8 +35,11 @@ html {
 body {
   background-color: var(--primary);
   color: #fff;
+}
+
+.loading-animation {
   animation: bodyAnimation 3s;
-  animation-delay: 1.9s;
+  animation-delay: 0s;
 }
 body::-webkit-scrollbar {
   display: none; /* WebKit browsers */
