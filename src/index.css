@@ -35,7 +35,7 @@ html {
 body {
   background-color: var(--primary);
   color: #fff;
-  animation: bodyAnimation 3s;
+  animation: bodyAnimation 4s;
   animation-delay: 1.9s;
 }
 .container {
