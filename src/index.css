@@ -38,8 +38,7 @@ body {
 }
 
 .loading-animation {
-  animation: bodyAnimation 3s;
-  animation-delay: 0s;
+  animation: bodyAnimation 2s;
 }
 body::-webkit-scrollbar {
   display: none; /* WebKit browsers */
