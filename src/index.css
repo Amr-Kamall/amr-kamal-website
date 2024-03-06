@@ -37,9 +37,6 @@ body {
   color: #fff;
 }
 
-.loading-animation {
-  animation: bodyAnimation 2s;
-}
 body::-webkit-scrollbar {
   display: none; /* WebKit browsers */
 }
@@ -87,7 +84,7 @@ button:active {
   transform: scale(0.9);
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0.8rem;
 }
 
@@ -105,7 +102,7 @@ button:active {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */
 
 .loader {
   position: relative;
@@ -166,6 +163,9 @@ button:active {
 
 .no-scroll {
   overflow: hidden;
+}
+.loading-animation {
+  animation: bodyAnimation 2s;
 }
 @keyframes bodyAnimation {
   0% {

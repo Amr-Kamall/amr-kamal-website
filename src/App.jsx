@@ -26,7 +26,7 @@ function App() {
       }
       setTimeout(function () {
         setLoading(false);
-      }, 1700);
+      }, 1500);
     },
     [loading]
   );
