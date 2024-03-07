@@ -110,6 +110,7 @@ button:active {
   margin: auto;
   background: rgb(93, 188, 252);
   animation: diamondLoader 2.1s linear infinite;
+  animation-delay: 1s;
 }
 
 .amr-loader {
