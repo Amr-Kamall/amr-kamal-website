@@ -19,10 +19,10 @@ function App() {
   useEffect(() => {
     if (loading) {
       document.body.classList.add("no-scroll");
-      const timeout = setTimeout(() => setLoading(false), 1800);
+      const timeout = setTimeout(() => setLoading(false), 1600);
       return () => clearTimeout(timeout);
     } else {
-      // document.body.classList.add("loading");
+      document.body.classList.add("loading-animation-body");
       document.body.classList.remove("no-scroll");
     }
   }, [loading]);
