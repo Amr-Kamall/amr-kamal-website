@@ -109,7 +109,7 @@ button:active {
   inset: -15px;
   margin: auto;
   background: rgb(93, 188, 252);
-  animation: diamondLoader 1.6s linear infinite;
+  animation: diamondLoader 2.2s linear infinite;
 }
 
 .amr-loader {
