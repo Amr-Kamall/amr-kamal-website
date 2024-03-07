@@ -22,7 +22,7 @@ function App() {
       const timeout = setTimeout(() => setLoading(false), 1800);
       return () => clearTimeout(timeout);
     } else {
-      document.body.classList.add("loading");
+      // document.body.classList.add("loading");
       document.body.classList.remove("no-scroll");
     }
   }, [loading]);

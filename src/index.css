@@ -35,10 +35,12 @@ html {
 body {
   background-color: var(--primary);
   color: #fff;
+  animation: bodyAnimation;
+  animation: bodyAnimation 2s 1.8s;
 }
-body.loading {
+/* body.loading {
   animation: bodyAnimation 2s;
-}
+} */
 
 body::-webkit-scrollbar {
   display: none; /* WebKit browsers */
@@ -167,9 +169,9 @@ button:active {
 .no-scroll {
   overflow: hidden;
 }
-.loading-animation {
+/* .loading-animation {
   animation: bodyAnimation 2s;
-}
+} */
 @keyframes bodyAnimation {
   0% {
     opacity: 0;
