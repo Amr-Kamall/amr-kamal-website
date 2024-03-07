@@ -86,7 +86,6 @@ button:disabled {
 button:active {
   transform: scale(0.9);
 }
-
 .loader {
   position: relative;
   width: 64px;
@@ -95,6 +94,7 @@ button:active {
   transform: rotate(45deg);
   overflow: hidden;
 }
+
 .loader:after {
   content: "";
   position: absolute;
@@ -102,6 +102,7 @@ button:active {
   margin: auto;
   background: #222b32;
 }
+
 .loader:before {
   content: "";
   position: absolute;
@@ -110,6 +111,7 @@ button:active {
   background: rgb(93, 188, 252);
   animation: diamondLoader 2s linear infinite;
 }
+
 .amr-loader {
   position: absolute;
   top: 500px;
@@ -120,6 +122,7 @@ button:active {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
 @keyframes diamondLoader {
   0%,
   10% {
@@ -137,7 +140,6 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* backdrop-filter: blur(30px); */
   background-color: rgb(24, 24, 27);
   z-index: 100000000;
   height: 100vh;
@@ -147,19 +149,19 @@ button:active {
 .no-scroll {
   overflow: hidden;
 }
+
 .loading-animation-body {
   animation: bodyAnimation 2s;
 }
+
 @keyframes bodyAnimation {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @media (max-width: 675px) {
   .container {
     width: 96%;
