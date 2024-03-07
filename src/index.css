@@ -159,6 +159,7 @@ button:active {
 
 .loading-animation-body {
   animation: bodyAnimation 3s;
+  animation-delay: 1.5s;
 }
 
 @keyframes bodyAnimation {

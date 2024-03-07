@@ -22,10 +22,15 @@ function App() {
       const timeout = setTimeout(() => setLoading(false), 1600);
       return () => clearTimeout(timeout);
     } else {
-      document.body.classList.add("loading-animation-body");
+      // document.body.classList.add("loading-animation-body");
       document.body.classList.remove("no-scroll");
     }
   }, [loading]);
+  useEffect(function () {
+    document.body.addEventListener("animationstart", function () {
+      document.body.classList.add("loading-animation-body");
+    });
+  }, []);
   return (
     <div className="container">
       {loading ? (
