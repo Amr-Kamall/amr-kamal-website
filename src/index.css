@@ -87,7 +87,7 @@ button:active {
   transform: scale(0.9);
 }
 /* HTML: <div class="loader"></div> */
-.loader {
+/* .loader {
   width: 60px;
   aspect-ratio: 1;
   display: flex;
@@ -108,33 +108,33 @@ button:active {
     transform: scale(var(--s, 1)) translate(0px) perspective(150px)
       rotateY(0deg);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 0 75%, 0 25%);
-    background: #fa6900;
+    background: rgb(93, 188, 252);
   }
   37.5% {
     transform: scale(var(--s, 1)) translate(-10px) perspective(150px)
       rotateX(0deg);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 0 75%, 0 25%);
-    background: #fa6900;
+    background: rgb(93, 188, 252);
   }
   50% {
     transform: scale(var(--s, 1)) translate(-10px) perspective(150px)
       rotateX(-90deg);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 0 75%, 0 25%);
-    background: #fa6900;
+    background: rgb(93, 188, 252);
     border-radius: 0;
   }
   50.01% {
     transform: scale(var(--s, 1)) translate(-10px) perspective(150px)
       rotateX(-90.1deg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 25%);
-    background: #2fb8ac;
+    background: rgb(93, 188, 252);
     border-radius: 100px 0 0 100px;
   }
   62.5% {
     transform: scale(var(--s, 1)) translate(-10px) perspective(150px)
       rotateX(-180deg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 25%);
-    background: #2fb8ac;
+    background: rgb(93, 188, 252);
     border-radius: 100px 0 0 100px;
   }
   70%,
@@ -144,6 +144,25 @@ button:active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 25%);
     background: #2fb8ac;
     border-radius: 100px 0 0 100px;
+  }
+} */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  animation: zeroRotation 1s ease infinite alternate-reverse;
+}
+
+@keyframes zeroRotation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0) rotate(360deg);
   }
 }
 
