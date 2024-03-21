@@ -41,6 +41,13 @@ export const myProjects = [
     liveDemo: "https://use-popcorn-seven-ecru.vercel.app/",
     githubRepo: "https://github.com/Amr-Kamall/usePopcorn",
   },
+  {
+    projectTitle: "Dashboard",
+    category: "react",
+    imgPath: "/images/dashboard.png",
+    liveDemo: "https://dashboard-bay-chi.vercel.app/",
+    githubRepo: "https://github.com/Amr-Kamall/dashboard",
+  },
 
   {
     projectTitle: "Crud",
