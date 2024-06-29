@@ -38,8 +38,8 @@ export const myProjects = [
     projectTitle: "movies",
     category: "react",
     imgPath: "/images/movie.png",
-    liveDemo: "https://use-popcorn-seven-ecru.vercel.app/",
-    githubRepo: "https://github.com/Amr-Kamall/usePopcorn",
+    liveDemo: "https://use-pop-corn-zeta.vercel.app/",
+    githubRepo: "https://github.com/Amr-Kamall/UsePopcorn",
   },
   {
     projectTitle: "Dashboard",
