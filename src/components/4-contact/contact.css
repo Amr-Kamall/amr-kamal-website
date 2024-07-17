@@ -1,0 +1,126 @@
+.contact .title {
+  font-size: 2.1rem;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+.contact .title .icon-envelope {
+  color: var(--sub-title);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.contact .sub-title {
+  color: var(--sub-title);
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.contact label {
+  color: var(--sub-title);
+}
+
+.contact input,
+.contact textarea {
+  outline: none;
+  border: 1px solid rgb(63 63 70);
+  background-color: rgba(63, 63, 70, 0.15);
+  resize: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--title);
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.light .contact input,
+.light .contact textarea {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border: 1px solid rgb(45 212 191);
+}
+
+.light .contact input:focus,
+.light .contact textarea:focus {
+  border: 1px solid #000;
+}
+/* 
+.contact input:hover,
+.contact textarea:hover {
+  border: 1px solid rgb(45 212 191);
+} */
+
+.contact textarea {
+  min-height: 9rem;
+  width: 15.6rem;
+}
+
+.contact .form-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.contact .submit {
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.6rem 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  border: 1px solid rgb(63 63 70);
+}
+
+.contact .submit:hover {
+  transform: scale(0.97);
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* gap: 2rem; */
+}
+.contact-content form {
+  flex-grow: 2;
+}
+.succeeded {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1031px) {
+  .contactAnimation {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 890px) {
+  .contactAnimation {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
+  .contact form {
+    width: 90%;
+  }
+  .contact .form-group {
+    flex-direction: column;
+    align-items: start;
+    margin: 2rem 0;
+  }
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+  .contact .submit {
+    display: block;
+    margin: auto;
+  }
+}
