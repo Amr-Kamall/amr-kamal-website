@@ -83,7 +83,7 @@
 }
 .main .right-section article.card:hover {
   /* border: 1px solid var(--blue); */
-  transform: rotate(1deg) scale(1.01);
+  transform: rotate(1deg) scale(1.01) !important; 
 }
 
 .light .main .right-section article.card:hover {

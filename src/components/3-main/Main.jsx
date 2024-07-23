@@ -10,7 +10,7 @@ function Main() {
     "HTML & CSS",
     "Javascript",
     "React",
-    "Bootstrab",
+    "bootstrap",
   ];
   const [activeBtn, setActiveBtn] = useState(0);
   const [filteredProjects, setFilteredProjects] = useState(myProjects);
@@ -36,7 +36,7 @@ function Main() {
       setFilteredProjects(filteerdProjects);
     } else {
       const filteerdProjects = myProjects.filter(
-        (project) => project.category === "bootstrab"
+        (project) => project.category === "bootstrap"
       );
       setFilteredProjects(filteerdProjects);
     }
@@ -62,7 +62,7 @@ function Main() {
               initial={{ transform: "scale(0)" }}
               animate={{ transform: "scale(1)" }}
               transition={{
-                duration:0.4,
+                duration:0.3,
                 type: "spring",
                 damping: 8,
                 stiffness: 50,
