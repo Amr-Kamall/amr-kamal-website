@@ -59,8 +59,7 @@ function Main() {
             <div className="card-content">
               <h1 className="title">{project.projectTitle}</h1>
               <p className="sub-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                exercitationem?
+                {project.info}
               </p>
             </div>
             <div className="card-links">
