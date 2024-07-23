@@ -59,7 +59,7 @@
     rgba(255, 255, 255, 0.05),
     rgba(255, 255, 255, 0.05)
   );
-  animation: myMove 1s;
+  /* animation: myMove 1s; */
   overflow: hidden;
 }
 

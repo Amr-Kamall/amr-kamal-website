@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "./header.css";
 
 const mobileLinks = ["Home", "About", "Projects", "Contact"];
@@ -29,7 +30,11 @@ function Header() {
         className="icon-menu"
       />
       <div />
-      <nav>
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <ul className="flex">
           <li>
             <a href="#Home">Home</a>
@@ -44,8 +49,11 @@ function Header() {
             <a href="#Contact">Contact</a>
           </li>
         </ul>
-      </nav>
-      <button
+      </motion.nav>
+      <motion.button
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.3, type: "spring", damping: 7 }}
         onClick={() => {
           localStorage.setItem("Mode", theme === "dark" ? "light" : "dark");
           setTheme(localStorage.getItem("Mode"));
@@ -57,7 +65,7 @@ function Header() {
         ) : (
           <span className="icon-sun"></span>
         )}
-      </button>
+      </motion.button>
       {showModal && (
         <div className="fixed border">
           <ul className="modal">

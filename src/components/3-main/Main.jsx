@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./main.css";
 import { myProjects } from "./myProjects";
+import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Main() {
   const buttonsTitle = [
@@ -52,27 +54,47 @@ function Main() {
           </button>
         ))}
       </div>
-      <div className="right-section">
-        {filteredProjects.map((project) => (
-          <article className="card" key={project.projectTitle}>
-            <img src={project.imgPath} alt={project.projectTitle} />
-            <div className="card-content">
-              <h1 className="title">{project.projectTitle}</h1>
-              <p className="sub-title">
-                {project.info}
-              </p>
-            </div>
-            <div className="card-links">
-              <a href={project.liveDemo} target="_blank" rel="noreferrer">
-                <span className="icon-link"></span>
-              </a>
-              <a href={project.githubRepo} target="_blank" rel="noreferrer">
-                <span className="icon-github"></span>
-              </a>
-            </div>
-          </article>
-        ))}
-      </div>
+      <motion.div className="right-section">
+        <AnimatePresence>
+          {filteredProjects.map((project) => (
+            <motion.article
+              layout
+              initial={{ transform: "scale(0)" }}
+              animate={{ transform: "scale(1)" }}
+              transition={{
+                duration:0.4,
+                type: "spring",
+                damping: 8,
+                stiffness: 50,
+              }}
+              className="card"
+              key={project.projectTitle}
+            >
+              <motion.img src={project.imgPath} alt={project.projectTitle} />
+              <motion.div className="card-content">
+                <motion.h1 className="title">{project.projectTitle}</motion.h1>
+                <motion.p className="sub-title">{project.info}</motion.p>
+              </motion.div>
+              <motion.div className="card-links">
+                <motion.a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <motion.span className="icon-link"></motion.span>
+                </motion.a>
+                <motion.a
+                  href={project.githubRepo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <motion.span className="icon-github"></motion.span>
+                </motion.a>
+              </motion.div>
+            </motion.article>
+          ))}
+        </AnimatePresence>
+      </motion.div>
     </main>
   );
 }
