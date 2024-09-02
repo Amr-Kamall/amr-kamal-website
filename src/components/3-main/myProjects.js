@@ -25,6 +25,14 @@ export const myProjects = [
     info: "The dashboard project is comprehensive web application with react.js",
   },
   {
+    projectTitle: "product builder",
+    category: "react",
+    imgPath: "/images/product-builder.png",
+    liveDemo: "https://product-builder-dun.vercel.app/",
+    githubRepo: "https://github.com/Amr-Kamall/product-builder",
+    info: "Experience the ultimate customization tool with our advanced product builder",
+  },
+  {
     projectTitle: "watches",
     category: "javascript",
     imgPath: "/images/Watches.png",
