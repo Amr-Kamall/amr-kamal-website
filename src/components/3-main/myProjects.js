@@ -50,6 +50,14 @@ export const myProjects = [
     info: "The coffee shop website is a visually appealing and user-friendly",
   },
   {
+    projectTitle: "trillo",
+    category: "html&css",
+    imgPath: "/images/trillo.png",
+    liveDemo: "https://trillo-theta-amber.vercel.app/",
+    githubRepo: "https://github.com/Amr-Kamall/trillo",
+    info: "Trillo is modern landing page created using flex-box by scss.",
+  },
+  {
     projectTitle: "World Wise",
     category: "react",
     imgPath: "/images/WorldWise.png",
